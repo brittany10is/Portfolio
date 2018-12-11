@@ -5,72 +5,121 @@
   <meta charset="utf-8">
   <title>Brittany Newton</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
-<!--//////////////////////////Navigation Bar////////////////////////-->
-<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding:0;
-    overflow: hidden;
-    background-color: #E9E9E9;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 100;
-    border-bottom: 5px solid #424242d1;
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.49), 0px 5px 20px 0px rgba(0, 0, 0, 0.19), inset 0px -3px 10px 0px rgba(0, 0, 0, 0.19);
-}
+  <!--//////////////////////////Navigation Bar////////////////////////-->
+  <style>
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding:0;
+      overflow: hidden;
+      /*background-color: #E9E9E9;*/
+      font-family: 'Roboto Slab', serif;
+      font-weight: 100;
+      /*border-bottom: 5px solid #424242d1;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.49), 0px 5px 20px 0px rgba(0, 0, 0, 0.19), inset 0px -3px 10px 0px rgba(0, 0, 0, 0.19);*/
+  }
 
-li a {
+  li a {
+      display: block;
+      color: #262626;
+      text-align: center;
+      padding: 30px 12px;
+      text-decoration: none;
+  }
+
+
+
+  /* underline stuff*/
+  .changer:after{
+    content: '';
+    position: absolute;
+    width: 0; height: 6px;
     display: block;
-    color: #424242;
-    text-align: center;
-    padding: 30px 12px;
-    text-decoration: none;
-}
+    margin-top: .5px;
+    background: #262626;
+    transition: width .6s ease;
+    -webkit-transition: width .6s ease;
+  }
 
-li a:hover:not(.active) {
-    COLOR: #0937CF;
-}
-
-.active {
-  COLOR: #424242;
-}
+  .changer:hover:after{
+    width: 4%;
+    background: #262626;
+  }
 
 /*   ---   MAIN TEST INSTRUCTIONS   ---   */
 div {
   font-family: 'Roboto Slab', serif;
   color: #262626;
+  margin-left:16%;
+  margin-right:16%;
 }
 
+/* ----- Role, Tools, Duration... ----- */
+.box{
+  float: left;
+  width: 15%;
+  height: 100px;
+}
+
+/*   ---   Gradient    ---   */
+#grad {
+  background-image: linear-gradient(#EFEFEF, #FFFFFF); /* Standard syntax (must be last) */
+}
 
 </style>
 </head>
 <body>
 
+<body id="grad">
+
 <ul>
-  <li style="float:left; margin-left: 20%; font-weight: bold; font-size: 18px;"><a href="index.html">Brittany Newton</a></li>
-  <li style="float:right; margin-right: 20%; font-size: 18px;"><a href="Brittany'sResume.png" target="_blank">Resume</a></li>
-  <li style="float:right; font-size: 18px;"><a href="aboutMe.html">About</a></li>
-  <li style="float:right; font-size: 18px;"><a href="index.html">Work</a></li>
+  <li style="float:left; margin-left: 15%; font-weight: bold; font-size: 18px;"><a href="index.html">Brittany Newton</a></li>
+  <li style="float:right; margin-right: 15%; font-size: 18px;"><a class="changer" href="Brittany'sResume.png" target="_blank">Resume</a></li>
+  <li style="float:right; font-size: 18px;"><a class="changer" href="aboutMe.html">About</a></li>
+  <li style="float:right; font-size: 18px;"><a class="changer" href="index.html">Work</a></li>
 </ul>
 
 <br>
 <br>
 <br>
+
+
+<img src="CurioPetsCareBanner.png" class="image" style="float:none; margin-left: 16%; width: 68%; height: 68%">
+
+<div style="margin-top: 1%; font-weight: bold; font-size: 48px;"> CurioPets</div>
+
+<div style="margin-top: 1%; margin-bottom: 1%; font-size: 18px;"> CurioPets is an Augmented Reality pet simulator game
+    produced by Beyond One,a startup based in Mountain View, CA. The mobile app encourages real world exploration as you travel with your curious pet.
+    Find out more at the App Store or CurioPets Facebook Page. </div>
+
+
+<div class="box" style="LINE-HEIGHT:5px; font-weight: bold; font-size: 20px; margin-right: 0% !important;">
+  <p>Role</p>
+  <p style="font-size: 16px">3D Modeler</p>
+</div>
+<div class="box" style="LINE-HEIGHT:5px; margin-left: 0% !important; font-weight: bold; font-size: 20px; margin-right: 2% !important;">
+  <p>Tools</p>
+  <p style="font-size: 16px">Blender, Photoshop</p>
+</div>
+<div class="box" style="LINE-HEIGHT:5px; margin-left: 0% !important; font-weight: bold; font-size: 20px; margin-right: 0% !important;">
+  <p>Duration</p>
+  <p style="font-size: 16px">July - December 2017</p>
+</div>
+
+<br style="clear:both" />
+<img src="BrittanyWithCoop.png" class="image" style="float:left; margin-left: 16%; width: 30%; height: 30%">
+
+
+
+<br style="clear:both" />
 <center>
-<div style="font-weight: bold; font-size: 22px;"> Project 1</div>
-<div></div>
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
-
-
-  <div style="float:center; font-size: 10px;">Copyright 2018 Brittany Newton</div>
-
-
+<div style="margin-left:0% !important; margin-top: 30%; margin-bottom: 0%; font-size: 12px; color: #262626; width: 100%; height: 65px"><br>
+  Copyright 2018 Brittany Newton</div>
 </center>
+
+
 
 </body>
 </html>

@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <title>Brittany Newton</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
 <!--//////////////////////////Navigation Bar////////////////////////-->
@@ -15,27 +14,93 @@ ul {
     margin: 0;
     padding:0;
     overflow: hidden;
-    background-color: #E9E9E9;
+    /*background-color: #E9E9E9;*/
     font-family: 'Roboto Slab', serif;
     font-weight: 100;
-    border-bottom: 5px solid #424242d1;
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.49), 0px 5px 20px 0px rgba(0, 0, 0, 0.19), inset 0px -3px 10px 0px rgba(0, 0, 0, 0.19);
+    /*border-bottom: 5px solid #424242d1;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.49), 0px 5px 20px 0px rgba(0, 0, 0, 0.19), inset 0px -3px 10px 0px rgba(0, 0, 0, 0.19);*/
 }
 
 li a {
     display: block;
-    color: #424242;
+    color: #262626;
     text-align: center;
     padding: 30px 12px;
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
-    COLOR: #0937CF;
+
+
+/* underline stuff*/
+.changer:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 6px;
+  display: block;
+  margin-top: .5px;
+  background: #262626;
+  transition: width .6s ease;
+  -webkit-transition: width .6s ease;
 }
 
-.active {
-  COLOR: #424242;
+.changer:hover:after{
+  width: 4%;
+  background: #262626;
+}
+
+
+/* --------------------------- image hover ------------------------------ */
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #424242;
+}
+
+.container:hover .overlay {
+  opacity: 0.9;
+}
+
+.text1 {
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  font-size: 26px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text2 {
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 /*   ---   MAIN TEST INSTRUCTIONS   ---   */
@@ -45,52 +110,89 @@ div {
 }
 
 
+/*   ---   Gradient    ---   */
+#grad {
+  background-image: linear-gradient(#EFEFEF, #FFFFFF); /* Standard syntax (must be last) */
+}
+
 
 </style>
 </head>
-<body>
+<body id="grad">
 
 <ul>
-  <li style="float:left; margin-left: 20%; font-weight: bold; font-size: 18px;"><a class="active" href="index.html">Brittany Newton</a></li>
-  <li style="float:right; margin-right: 20%; font-size: 18px;"><a href="Brittany'sResume.png" target="_blank">Resume</a></li>
-  <li style="float:right; font-size: 18px;"><a href="aboutMe.html">About</a></li>
-  <li style="float:right; font-size: 18px;"><a class="active" href="index.html">Work</a></li>
+  <li style="float:left; margin-left: 15%; font-size: 18px;"><a href="index.html">Brittany Newton</a></li>
+  <li style="float:right; margin-right: 15%; font-size: 18px;"><a class="changer" href="Brittany'sResume.png" target="_blank">Resume</a></li>
+  <li style="float:right; font-size: 18px;"><a class="changer" href="aboutMe.html">About</a></li>
+  <li style="float:right; font-size: 18px;"><a class="changer" href="index.html">Work</a></li>
 </ul>
 
 <br>
 <br>
 <br>
 <center>
-<div style="font-weight: bold; font-size: 22px;"> Hi, welcome to my virtual hub!</div>
-<div>I'm Brittany, a Product Designer with a passion for 3D modeling.</div>
-<br>
-<br>
-<br>
-
-<div class="row">
-  <div class="column">
-    <a href="Block1.html"><img src="InProgressSquare.png" style="width: 19%; height: 19%"></a>
-    <a href="Block2.html"><img src="InProgressSquare.png" style="width: 19%; height: 19%"></a>
-    <a href="Block3.html"><img src="InProgressSquare.png" style="width: 19%; height: 19%"></a>
-  </div>
-  <div class="column">
-    <a href="Block4.html"><img src="InProgressSquare.png" style="width: 19%; height: 19%"></a>
-    <a href="Block5.html"><img src="InProgressSquare.png" style="width: 19%; height: 19%"></a>
-    <a href="Block6.html"><img src="InProgressSquare.png" style="width: 19%; height: 19%"></a>
-  </div>
-</div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-  <div style="float:center; font-size: 10px;">Copyright 2018 Brittany Newton</div>
-
-
+<div style="font-weight: bold; font-size: 40px;"> Hi, I'm Brittany!</div>
+<div style="font-size: 20px; margin-top: 1%">A Product Designer with a passion for 3D modeling.</div>
 </center>
+<br>
+<br>
+<br>
+
+<div class="container" style="float:left; margin-left: 16%; width: 22%; height: 22%; margin-top: 5%;">
+  <img src="CurioPetsThumbnail.png" class="image">
+  <a href="Block1.html"><div class="overlay">
+    <div class="text1">CurioPets</div><div class="text2"> 3D Modeler </div>
+  </div></a>
+</div>
+<div class="container" style="float:left; margin-left: 1%; width: 22%; height: 22%; margin-top: 5%;">
+  <img src="DesignAtUCSDLogo.png" class="image">
+    <a href="Block2.html"><div class="overlay">
+    <div class="text1">Design at UCSD</div><div class="text2"> Board Member</div>
+  </div></a>
+</div>
+<div class="container" style="float:left; margin-left: 1%; width: 22%; height: 22%; margin-top: 5%;">
+  <img src="HAOLogo.png" class="image">
+    <a href="Block3.html"><div class="overlay">
+    <div class="text1">Heroes Alliance Online</div><div class="text2"> 3D Modeler</div>
+  </div></a>
+</div>
+<br>
+
+<!-- FOR LATER
+<div class="container" style="float:left; margin-top: 1%; margin-left: 20%; width: 19%; height: 19%">
+  <img src="InProgressSquare.png" class="image">
+  <div class="overlay">
+    <a href="Block4.html"><div class="text">Hello World</div></a>
+  </div>
+</div>
+<div class="container" style="float:left; margin-top: 1%; margin-left: 1%; width: 19%; height: 19%">
+  <img src="InProgressSquare.png" class="image">
+    <a href="Block5.html"><div class="overlay"></a>
+    <div class="text">Hello World</div>
+  </div>
+</div>
+<div class="container" style="float:left; margin-top: 1%; margin-left: 1%; width: 19%; height: 19%">
+  <img src="InProgressSquare.png" class="image">
+    <a href="Block6.html"><div class="overlay"></a>
+    <div class="text">Hello World</div>
+  </div>
+</div>
+
+-->
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- background-color: #151515;  box color -->
+<center>
+<div style="margin-top: 25%; margin-bottom: 0%; font-size: 12px; color: #262626; width: 100%; height: 65px"><br>
+  Copyright 2018 Brittany Newton</div>
+</center>
+
+
 
 </body>
 </html>
