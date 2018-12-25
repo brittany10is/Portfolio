@@ -5,72 +5,209 @@
   <meta charset="utf-8">
   <title>Brittany Newton</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
-<!--//////////////////////////Navigation Bar////////////////////////-->
-<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding:0;
-    overflow: hidden;
-    background-color: #E9E9E9;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 100;
-    border-bottom: 5px solid #424242d1;
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.49), 0px 5px 20px 0px rgba(0, 0, 0, 0.19), inset 0px -3px 10px 0px rgba(0, 0, 0, 0.19);
-}
+  <!--//////////////////////////Navigation Bar////////////////////////-->
+  <style>
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding:0;
+      overflow: hidden;
+      /*background-color: #E9E9E9;*/
+      font-family: 'Roboto Slab', serif;
+      font-weight: 100;
+      /*border-bottom: 5px solid #424242d1;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.49), 0px 5px 20px 0px rgba(0, 0, 0, 0.19), inset 0px -3px 10px 0px rgba(0, 0, 0, 0.19);*/
+  }
 
-li a {
+  li a {
+      display: block;
+      color: #262626;
+      text-align: center;
+      padding: 30px 12px;
+      text-decoration: none;
+  }
+
+
+
+  /* underline stuff*/
+  .changer:after{
+    content: '';
+    position: absolute;
+    width: 0; height: 6px;
     display: block;
-    color: #424242;
-    text-align: center;
-    padding: 30px 12px;
-    text-decoration: none;
-}
+    margin-top: .5px;
+    background: #262626;
+    transition: width .6s ease;
+    -webkit-transition: width .6s ease;
+  }
 
-li a:hover:not(.active) {
-    COLOR: #0937CF;
-}
-
-.active {
-  COLOR: #424242;
-}
+  .changer:hover:after{
+    width: 4%;
+    background: #262626;
+  }
 
 /*   ---   MAIN TEST INSTRUCTIONS   ---   */
 div {
   font-family: 'Roboto Slab', serif;
   color: #262626;
+  margin-left:16%;
+  margin-right:16%;
 }
 
+ol {
+  font-family: 'Roboto Slab', serif;
+  color: #262626;
+  margin-left:16%;
+  margin-right:16%;
+}
+
+/* ----- Role, Tools, Duration... ----- */
+.box{
+  float: left;
+  width: 22%;
+  height: 100px;
+}
+
+/*   ---   Gradient    ---   */
+#grad {
+  background-image: linear-gradient(#EFEFEF, #FFFFFF); /* Standard syntax (must be last) */
+}
+
+.note {
+  color: #ff562d;
+  text-decoration: none;
+}
+
+.note:hover {
+  text-decoration: underline;
+}
+
+.container img {
+    float:right;
+    margin: 0 0 10px 10px;
+}
 
 </style>
 </head>
 <body>
 
+<body id="grad">
+
 <ul>
-  <li style="float:left; margin-left: 20%; font-weight: bold; font-size: 18px;"><a href="index.html">Brittany Newton</a></li>
-  <li style="float:right; margin-right: 20%; font-size: 18px;"><a href="Brittany'sResume.png" target="_blank">Resume</a></li>
-  <li style="float:right; font-size: 18px;"><a href="aboutMe.html">About</a></li>
-  <li style="float:right; font-size: 18px;"><a href="index.html">Work</a></li>
+  <li style="float:left; margin-left: 15%; font-weight: bold; font-size: 18px;"><a href="index.html">Brittany Newton</a></li>
+  <li style="float:right; margin-right: 15%; font-size: 18px;"><a class="changer" href="Brittany'sResume.png" target="_blank">Resume</a></li>
+  <li style="float:right; font-size: 18px;"><a class="changer" href="aboutMe.html">About</a></li>
+  <li style="float:right; font-size: 18px;"><a class="changer" href="index.html">Work</a></li>
 </ul>
 
 <br>
 <br>
 <br>
+
+
+<img src="LaundryBanner.png" class="image" style="float:none; margin-left: 16%; width: 68%; height: 68%">
+
+<div style="margin-top: 1%; font-weight: bold; font-size: 48px;"> Chaser </div>
+
+<div style="margin-top: 1%; margin-bottom: 1%; font-size: 18px;"> This quarter-long project was completed for the
+   college course <a class="note" href="https://www.ucsd.edu/catalog/courses/COGS.html">COGS120/CSE170</a> (Human-Computer Interaction Design). I worked with Jacobzen Chang
+   and Kristen Santos on this project. The goal of this course was to give hands-on practice with a modern human-centered design process while building a web application
+   to serve a set of target users.
+
+ </div>
+
+
+<div class="box" style="LINE-HEIGHT:5px; font-weight: bold; font-size: 20px; margin-right: 2% !important;">
+  <p>Roles</p>
+  <p style="font-size: 16px"> Research, Sketching,</p>
+  <p style="font-size: 16px"> Prototyping, & User testing</p>
+</div>
+<div class="box" style="LINE-HEIGHT:5px; margin-left: 0% !important; font-weight: bold; font-size: 20px; margin-right: 0% !important;">
+  <p>Tools</p>
+  <p style="font-size: 16px">Figma, HTML/CSS</p>
+</div>
+<div class="box" style="LINE-HEIGHT:5px; margin-left: 0% !important; font-weight: bold; font-size: 20px; margin-right: 0% !important;">
+  <p>Duration</p>
+  <p style="font-size: 16px">September - December 2018</p>
+</div>
+
+<br style="clear:both" />
 <center>
-<div style="font-weight: bold; font-size: 22px;"> Project 5</div>
-<div></div>
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
 
-
-  <div style="float:center; font-size: 10px;">Copyright 2018 Brittany Newton</div>
-
-
+<div style="margin-top:4%; font-size: 20px"><u> DESIGN GOAL </u></div>
 </center>
+<div style="margin-top: 1%; margin-bottom: 1%; font-size: 18px;"> The struggle to become fit by running should be physically
+  challenging, not mentally challenging. In order to support this statement, we set out to find a way to enhance
+  one's running experience so that the activity would be perceived more positively rather than an inconvenience.</div>
+<center>
+
+<div style="margin-top:4%; font-size: 20px"><u> OBSERVATIONS/INTERVIEWS </u></div>
+</center>
+  <div style="margin-top: 1%; margin-bottom: 1%; font-size: 18px; float: left;"> We interviewed a current athlete, a former athlete, and a running club member.
+    As for the activity, we merely asked them to run. We thought that keeping our expectation rather broad and having participants from
+    various backgrounds would lead to a more interesting, insightful set of observations that would allow us to improve the experiences of a variety of
+    student runners. We were interested in observing people as close to their natural settings as we possible, so we tried to be flexible by
+    allowing the participants to run in whatever way "running" meant to them. </div>
+
+    <div style="margin-top: 1%; margin-bottom: 0%; font-size: 18px; float: left;"> Top User Needs: </div>
+<br style="clear:both" />
+    <ol style="margin-top: 0.5%; font-size: 18px;">
+       <li>Students need a way to get back into shape and motivate them to continue to practice their running ability.</li>
+       <li style="margin-top: 0.5%;">Students need to have easily accessible, meaningful metrics to track his/her progress which could include aspects such as fitness or performance.</li>
+       <li style="margin-top: 0.5%;">Students need a way to get more partners for runs because running independently does not allow for socialization and can seem lonely.</li>
+    </ol>
+<br style="clear:both" />
+
+<center>
+<div style="margin-top:2%; font-size: 20px"><u> STORYBOARD </u></div>
+</center>
+<div style="margin-top: 1%; font-size: 18px; float: left;">  We created a short storyboard demonstrate who the user is, the usage situation,
+  and the user's motivations for using the interface. </div>
+ <center>
+<img src="Storyboard.png" class="image" style="margin-bottom:3%; margin-top: 1%; width: 30%; height: 30%">
+<br style="clear:both" />
+
+<div style="margin-top:2%; font-size: 20px"><u> PAPER PROTOTYPE </u></div>
+</center>
+<div style="margin-top: 1%; margin-bottom: 1%; font-size: 18px; float: left;"> We quickly put together paper prototypes
+ based off of the concept of self-improvement via competition. After laying out the user flow that we believed would best
+ meet our user needs, we had students test our prototype and recorded our observations through an heuristic evaluation.</div>
+<center>
+<img src="PaperP.png" class="image" style="margin-bottom:1%; margin-top: 1%; width: 60%; height: 60%">
+<br style="clear:both" />
+
+
+<div style="margin-top:5%; margin-bottom:1%; font-size: 20px"><u> FINAL SOLUTION </u></div>
+</center>
+
+<div style="margin-top: 1%; margin-bottom: 3%; font-size: 18px;"> The first step in our redesign is to ask students
+  for either their phone number or email when setting up their laundry account so that notifications can be sent out
+  when a student’s laundry is able to be picked up.
+  Our machine would have the user’s information from when they swiped their ID to pay for their load. We believe
+  that this would reduce the number of students that forget to pick up their laundry allowing more washers and dryers to be available.
+  Along with the pick up notification, students will have the opportunity to press a button indicating when a machine is broken. This
+  system will allow for machines to be repaired faster and indicate to other students which machines are broken
+  and should not be used. </div>
+
+<center>
+<iframe style="border: none;" width="800" height="450"
+src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fb81fkNNZHwQHH3crwU08GhSV%2FChaser-Test%3Fnode-id%3D0%253A1%26scaling%3Dscale-down" allowfullscreen></iframe>
+</center>
+
+
+
+<center>
+
+
+<br style="clear:both" />
+<center>
+<div style="margin-left:0% !important; margin-top: 8%; margin-bottom: 0%; font-size: 12px; color: #262626; width: 100%; height: 65px"><br>
+  Copyright © 2018 Brittany Newton</div>
+</center>
+
+
 
 </body>
 </html>
