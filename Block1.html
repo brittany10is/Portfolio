@@ -6,6 +6,8 @@
   <title>Brittany Newton</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 
   <!--//////////////////////////Navigation Bar////////////////////////-->
   <style>
@@ -52,8 +54,6 @@
 div {
   font-family: 'Roboto Slab', serif;
   color: #262626;
-  margin-left:16%;
-  margin-right:16%;
 }
 
 /* ----- Role, Tools, Duration... ----- */
@@ -88,12 +88,32 @@ div {
 
 <body id="grad">
 
-<ul>
-  <li style="float:left; margin-left: 15%; font-weight: bold; font-size: 18px;"><a href="index.html">Brittany Newton</a></li>
-  <li style="float:right; margin-right: 15%; font-size: 18px;"><a class="changer" href="Brittany'sResume.pdf" target="_blank">Resume</a></li>
-  <li style="float:right; font-size: 18px;"><a class="changer" href="aboutMe.html">About</a></li>
-  <li style="float:right; font-size: 18px;"><a class="changer" href="index.html">Work</a></li>
-</ul>
+  <!--        Bootstrap Nav Bar       -->
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light mt-5">
+      <a class="navbar-brand ml-5" href="#">Brittany Newton</a>
+      <button class="navbar-toggler ml-auto mr-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-5">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Work</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="aboutMe.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Brittany'sResume.pdf" target="_blank">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
 
 <br>
 <br>
@@ -102,30 +122,23 @@ div {
 
 <img src="CurioPetsCareBanner.png" class="image" style="float:none; margin-left: 16%; width: 68%; height: 68%">
 
-<div style="margin-top: 1%; font-weight: bold; font-size: 48px;"> CurioPets</div>
+<div style="margin-top: 1%; margin-left:16%; margin-right:16%; font-weight: bold; font-size: 48px;"> CurioPets</div>
 
-<div style="margin-top: 1%; margin-bottom: 1%; font-size: 18px;"> CurioPets is an Augmented Reality pet simulator game
+<div style="margin-top: 1%; margin-bottom: 1%; margin-left:16%; margin-right:16%; font-size: 18px;"> CurioPets is an Augmented Reality pet simulator game
     produced by Beyond One, a startup based in Mountain View, CA. The mobile app encourages real world exploration as you travel with your curious pet.
     Find out more at the <a class="note" href="https://itunes.apple.com/us/app/curiopets-ar/id1314565749?mt=8">App Store</a>
      or <a class="note" href="https://www.facebook.com/curiopets">CurioPets Facebook Page</a>. </div>
 
 
-<div class="box" style="LINE-HEIGHT:5px; font-weight: bold; font-size: 20px; margin-right: 0% !important;">
-  <p>Role</p>
-  <p style="font-size: 16px">3D Modeler</p>
-</div>
-<div class="box" style="LINE-HEIGHT:5px; margin-left: 0% !important; font-weight: bold; font-size: 20px; margin-right: 2% !important;">
-  <p>Tools</p>
-  <p style="font-size: 16px">Blender, Photoshop</p>
-</div>
-<div class="box" style="LINE-HEIGHT:5px; margin-left: 0% !important; font-weight: bold; font-size: 20px; margin-right: 0% !important;">
-  <p>Duration</p>
-  <p style="font-size: 16px">July - December 2017</p>
+<div style="margin-left:16%">
+  Role: 	&nbsp  3D Modeler
+  <br>Tools: &nbsp Blender, Photoshop
+  <br>Duration: &nbsp July - December 2017
 </div>
 
 <br style="clear:both" />
 <img src="BrittanyWithCoop.png" class="image" style="float:left; margin-left: 16%; width: 30%; height: 30%">
-<div style="margin-top:5%; margin-left: 50%; font-size: 18px"> Using Blender, I created various assets that promoted reoccurring game play. Some of which
+<div style="margin-top:5%; margin-left: 50%; margin-right:16%; font-size: 18px"> Using Blender, I created various assets that promoted reoccurring game play. Some of which
   would include: magical fruits, nuts, accessories, furniture, and much more.</div>
 
 <br style="clear:both" />
@@ -148,10 +161,13 @@ div {
 <br style="clear:both" />
 <center>
 <div style="margin-left:0% !important; margin-top: 8%; margin-bottom: 0%; font-size: 12px; color: #262626; width: 100%; height: 65px"><br>
-  Copyright © 2018 Brittany Newton</div>
+  Copyright © 2019 Brittany Newton</div>
 </center>
 
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 </html>
